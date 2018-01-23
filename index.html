@@ -5,6 +5,7 @@
   <style type="text/css">
     body {
       font-family: sans-serif;
+      background-color: lightpink;
     }
     img {
       max-width: 100%;
@@ -35,7 +36,7 @@
 
     // an array of possible image source values
     var imageSources = [
-      "http://images.mentalfloss.com/sites/default/files/styles/width-constrained-728/public/503373-iStock-186293315.jpg",
+    "http://images.mentalfloss.com/sites/default/files/styles/width-constrained-728/public/503373-iStock-186293315.jpg",
       "https://media4.s-nbcnews.com/j/newscms/2017_31/1270023/wonder-woman-roller-coaster-today-inline-170803_7e4934000dfd84cdbb6b2f4900a03988.today-inline-large.jpg",
       "http://cdn.cnn.com/cnnnext/dam/assets/160520171710-07-stormchaser-jpg-best-coasters-super-169.jpg",
       "https://thediabeticjourney.com/wp-content/uploads/2016/08/diabetes-rollercoaster.png"
@@ -48,14 +49,15 @@
     theImg.setAttribute("src", imageSources[0]);
 
     // TODO: set howMany variable to a value user inputs
-    var howMany
-
+    var howMany 
+    howMany = "10";
+    console.log ("10")
     var counter = 1;
-
+    
     // TODO: execute this loop the number of times user requested
-    while(false){
-      console.log("Wheee! This is the ", counter, " time we've done this!");
-
+    while(counter < 10) {
+      console.log( "Wheee! This is the ", counter = " time we've done this!");
+    }
       // find value of counter modulo length of sources array-
       // this value will increase by one on each iteration of the loop,
       // so image source will cycle through all possible images
@@ -64,6 +66,10 @@
       theImg.setAttribute("src", imageSources[theOne]);
 
       // TODO: increment the counter
+    var counter = 0
+    while(counter < 10){
+      console.log(counter)
+      counter = howMany + 1
     }
 
     // EXTRA CHALLENGES:
